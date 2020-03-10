@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Pobiehaylo Test</title>
+	<script src="https://kit.fontawesome.com/959478fd82.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" alt="InDevLab">
+	</header>
+
+	<section class="container">
+	<form action="">
+
+
+
+
+		<div class="todo" id="worktype">
+			<h2>Select what you want to translate</h2>
+			<div class="row radio justify-content-center">
+				<div class="col-sd-auto col-md-4 form-group">
+				<label>
+				    <input type="radio" name="worktype" value="web" checked="checked"/>
+				    <div id="web">Website</div>
+				</label>
+				</div>
+				<div class="col-sm-12 col-md-4 form-group">
+				<label>
+				    <input type="radio" name="worktype" value="another" />
+				    <div id="doc">Document</div>
+				</label>
+				</div>
+				<div class="col-sm-12 col-md-4 form-group">
+				<label>
+				    <input type="radio" name="worktype" value="another" />
+				    <div id="soc">Social Media</div>
+				</label>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="todo" id="upload">
+			<h3>Upload your documents</h3>
+			<div class="custom-file">
+			  <input type="file" id="uploadfile" class="custom-file-input" id="uploadfile" accept=".doc, .docx, .txt, .pdf, .md" multiple>
+			  <label class="custom-file-label" for="uploadfile" >
+			  	<div class="button-like">
+			  	<i class="fas fa-cloud-upload-alt"></i>
+			  	Upload a new file
+			  	</div>
+			  </label>
+			</div>
+
+			<div class="upload">
+			<table class="table table-borderless">
+				<thead>
+		        <tr>
+		            <th id="tname" scope="col">FILE NAME</th>
+		            <th id="tsize" scope="col">File size</th>
+		            <th id="tword" scope="col">Number of words</th>
+		            <th id="tdele" class="tdele" scope="col">Remove</th>
+		        </tr>
+			    </thead>
+
+			    <tbody id="res">
+			    </tbody>
+			</table>
+				
+			</div>
+		</div>
+
+
+
+
+		<div class="todo" id="language">
+			<h3>Choose your language pairings</h3>
+
+			<div class="form-group">
+			    <label for="langFrom">FROM</label>
+			    <select class="button-like form-control" id="langFrom">
+			      <option value="English">English</option>
+			      <option value="Ukrainian">Ukrainian</option>
+			      <option value="Russian">Russian</option>
+			    </select>
+			</div>
+
+			<div class="form-group">
+			    <label for="langTo">TO</label>
+			    <select class="button-like form-control" id="langTo">
+			      <option value="English">English</option>
+			      <option value="Ukrainian">Ukrainian</option>
+			      <option value="Russian">Russian</option>
+			    </select>
+			</div>
+		</div>
+
+
+
+
+
+		<div id="wrap2" class="row">
+		<div class="col-sm-12 col-md-6 todo" id="tone">
+			<h3>Select your desired tone</h3>
+			<div class="radio">
+				<label class="">
+				    <input type="radio" name="tone" value="web" checked="checked"/>
+				    <div class="button-like" id="cas">
+				    	<i class="fas fa-comments"></i>
+				    	Friendly / Casual
+				    </div>
+				</label>
+				<label class="">
+				    <input type="radio" name="tone" value="another" />
+				    <div class="button-like" id="pro">
+				    	<i class="fas fa-briefcase"></i> 
+				    	Corporate / Pro
+				    </div>
+				</label>
+				<label class="">
+				    <input type="radio" name="tone" value="another" />
+				    <div class="button-like" id="pop">
+				    	<i class="fas fa-bullhorn"></i>
+				    	Media / Formal
+				    </div>
+				</label>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-6 todo " id="time">
+			<h3>Tell us how urgent this job is</h3>
+			<div class="form-group">
+				<label for="urgency"></label>
+
+				<div class="markers" id="igot">
+					<span></span>
+					<p>I GOT TIME</p>
+				</div>
+				<div class="markers" id="aver">
+					<span></span>
+					<p>AVERAGE</p>					
+				</div>
+				<div class="markers" id="yest">
+					<span></span>
+					<p>YESTERDAY</p>					
+				</div>		
+
+				<input type="range" class="custom-range" min="0" max="2" id="urgency">
+
+			</div>
+		</div>
+		</div>
+
+
+
+
+
+		<div class="todo" id="signup">
+			<h3>Sign up and choose a payment method</h3>
+			<p>Already have an account with us? <a href="#">Sign in</a></p>
+			<div class="form-group">
+			    <label for="name">FULL NAME</label>
+			    <input placeholder="Mathieu Mayer" type="name" class="form-control" id="name" aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+			  </div>
+			<div class="form-group">
+			    <label for="email">EMAIL ADDRESS</label>
+			    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+			  </div>
+			  <div class="form-group">
+			    <label for="password">CHOOSE A PASSWORD</label>
+			    <input type="password" class="form-control" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+			  </div>
+		</div>
+		<input type="submit">
+
+
+
+
+	</form>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
+<script>
+    const input = document.getElementById('uploadfile');
+	const preview = document.getElementById('res');
+	var fileList = [];
+
+	var allFiles = []; //CONTAIN ALL UPLOADED FILES
+
+    input.addEventListener('change', updateImageDisplay);
+
+    function updateImageDisplay(){
+    	fileList = [];
+    	// console.log(fileList);
+    	// fileList = input.files;
+    	// var numFiles = input.files.length;
+    	// console.log(numFiles);
+    	// console.log
+
+    	//adding files to pool
+    	for (var i = 0; i < input.files.length; i++){
+    		fileList.push(input.files[i]);
+		    allFiles.push(input.files[i]);
+		    var fileId = allFiles.length;
+
+		    const lili = document.createElement('tr');
+		    const fili = document.createElement('td');
+			const para = document.createElement('td');
+			const sizi = document.createElement('td');
+			const nunu = document.createElement('td');
+
+			lili.setAttribute('value', fileId);
+
+		    para.textContent = fileList[i].name;
+			nunu.textContent = "666"
+			sizi.textContent = fileList[i].size;
+			fili.textContent = fileId;
+
+		    preview.append(lili);
+		    lili.appendChild(para);
+		    lili.appendChild(sizi);
+		    lili.appendChild(nunu);
+		    lili.appendChild(fili);
+		}
+		  // console.log(fileList[i].name);
+
+	}
+</script>
+</body>
+</html>
