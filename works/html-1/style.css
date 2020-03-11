@@ -249,14 +249,27 @@ input#urgency[type=range]::-webkit-slider-runnable-track {
     margin-bottom: 0;
     
 }
-.markers span{
-    display: none;
+#time .form-group .markers span{
+    display: block;
     border-radius: 50%;
     width: 8px;
     height: 8px;
     background-color: #ebeaee;
-    display: block;
+    display: none;
 }
 div#igot{left: 7px;}
 div#aver{left: calc(50% - 4px);}
 div#yest{right: 0px;}
+
+@media(max-width:1200px){
+    h3:before {
+    position: initial;
+    float: left;
+    margin-top: -7px;
+    margin-right: 40px;
+}
+.wrap{
+        margin-left: 90px;
+    margin-right: 50px;
+}
+}
