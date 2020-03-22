@@ -196,10 +196,6 @@ h3:before {
 #tone h3:before{content:'3';}
 #time h3:before{
     content:'4';
-    position:initial;
-    float:left;
-    margin-top:-7px;
-    margin-right:40px;
 }
 #signup h3:before{content:'5';}
 /*input#urgency{
@@ -262,14 +258,22 @@ div#aver{left: calc(50% - 4px);}
 div#yest{right: 0px;}
 
 @media(max-width:1200px){
-    h3:before {
-    position: initial;
-    float: left;
-    margin-top: -7px;
-    margin-right: 40px;
+.todo {
+    padding-left: 120px;
+    padding-right: 40px;
 }
 .wrap{
         margin-left: 90px;
     margin-right: 50px;
+}
+}
+
+
+@media(min-width:1220px){
+    #time h3:before {
+     position: initial; 
+     float: left; 
+     margin-top: -7px; 
+     margin-right: 40px; 
 }
 }
