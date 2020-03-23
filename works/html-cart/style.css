@@ -865,13 +865,18 @@ label span {
 	}
 }
 
-#categories #nav-holder.show{
-height: auto;
-overflow: scroll;
-padding-top:8rem;
+#categories #nav-holder.show {
+    position: absolute;
+    height: auto;
+    padding-top: 8rem;
+    background-color: white;
+    width: 100%;
+    top: inherit;
 }
-#categories.stay{
-	position:initial;
+
+#categories.stay {
+    position: relative;
+    margin-top: -8rem;
 }
 
 @media(max-width:760px){
@@ -1012,15 +1017,6 @@ li.sub li{
 li.sub::after{
 content: 's';
 }
-
-
-
-
-
-
-
-
-
 
 
 
