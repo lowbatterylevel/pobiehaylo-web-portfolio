@@ -15,6 +15,15 @@ p{
 	opacity: 0.7;
 	margin-top:30px
 }
+
+
+
+
+
+
+
+
+
 h2,.highlight{
 	font-weight: 600;
 	font-size: 40px;
@@ -76,7 +85,7 @@ h3.label::before{
 
 
 
-nav#head{
+#head{
 	display:flex;
 	justify-content: space-between;
 	padding:24px 20px;
@@ -283,9 +292,10 @@ div#clients {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap:wrap;
+	padding-top: 40px;
 }
 .brands img{
-	margin:40px 20px 0;
+	margin:20px 0;
 	opacity:15%;
 }
 .brands img.active{opacity:100%;}
@@ -296,7 +306,7 @@ div#clients {
 
 
 
-@media(min-width:760px){
+@media(min-width:770px){
 	section{
 	max-width: 1360px;
 	background: #F4F4F4;
@@ -312,8 +322,8 @@ div#clients {
 		margin-bottom: 80px;
 	}
 	.paddings{
-		padding-left: 145px;
-		padding-right: 145px;
+		padding-left: 145px!important;
+		padding-right: 145px!important;
 	}
 
 	.text-block{padding: 0px 90px;}
